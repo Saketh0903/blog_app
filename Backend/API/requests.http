@@ -1,0 +1,36 @@
+
+###user creation
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"ravi",
+    "password":"ravi",
+    "email":"ravi@mail.com"
+}
+
+
+#### user login
+post http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"Singh",
+    "password":"Singh@123"
+   
+}
+
+###reading articles of all users
+get http://localhost:4000/user-api/articles
+
+###
+post http://localhost:4000/user-api/comment
+Content-Type: application/json
+
+{
+    "articleid":"1708997411",
+    "username":"ravi",
+    "comment":"nice article"
+}
